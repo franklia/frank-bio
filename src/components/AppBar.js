@@ -6,17 +6,17 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import Badge from '@material-ui/core/Badge';
+// import InputBase from '@material-ui/core/InputBase';
+// import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import { fade } from '@material-ui/core/styles/colorManipulator';
+// import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+// import MenuIcon from '@material-ui/icons/Menu';
+// import SearchIcon from '@material-ui/icons/Search';
+// import AccountCircle from '@material-ui/icons/AccountCircle';
+// import MailIcon from '@material-ui/icons/Mail';
+// import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
 const styles = theme => ({
@@ -30,12 +30,12 @@ const styles = theme => ({
   //   marginLeft: -12,
   //   marginRight: 20,
   // },
-  title: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
-  },
+  // title: {
+  //   display: 'none',
+  //   [theme.breakpoints.up('sm')]: {
+  //     display: 'block',
+  //   },
+  // },
   // search: {
   //   position: 'relative',
   //   borderRadius: theme.shape.borderRadius,
@@ -51,30 +51,30 @@ const styles = theme => ({
   //     width: 'auto',
   //   },
   // },
-  searchIcon: {
-    width: theme.spacing.unit * 9,
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  inputRoot: {
-    color: 'inherit',
-    width: '100%',
-  },
-  inputInput: {
-    paddingTop: theme.spacing.unit,
-    paddingRight: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit,
-    paddingLeft: theme.spacing.unit * 10,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: 200,
-    },
-  },
+  // searchIcon: {
+  //   width: theme.spacing.unit * 9,
+  //   height: '100%',
+  //   position: 'absolute',
+  //   pointerEvents: 'none',
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
+  // inputRoot: {
+  //   color: 'inherit',
+  //   width: '100%',
+  // },
+  // inputInput: {
+  //   paddingTop: theme.spacing.unit,
+  //   paddingRight: theme.spacing.unit,
+  //   paddingBottom: theme.spacing.unit,
+  //   paddingLeft: theme.spacing.unit * 10,
+  //   transition: theme.transitions.create('width'),
+  //   width: '100%',
+  //   [theme.breakpoints.up('md')]: {
+  //     width: 200,
+  //   },
+  // },
   sectionDesktop: {
     display: 'none',
     '& button': {
@@ -90,6 +90,16 @@ const styles = theme => ({
       display: 'none',
     },
   },
+  appBar: {
+    display: 'block',
+  },
+  toolbar: {
+    paddingLeft: 20,
+    paddingRight: 20,
+    maxWidth: 1040,
+    margin: 'auto',
+    padding: 0,
+  },
   logo: {
     fontSize: 40,
     borderWidth: 3,
@@ -97,10 +107,19 @@ const styles = theme => ({
     borderStyle: 'solid',
     paddingTop: 0,
     paddingBottom: 0,
-    paddingLeft: 12,
-    paddingRight: 12,
+    paddingLeft: 6,
+    paddingRight: 6,
     marginRight: 40,
+    marginTop: 10,
+    marginBottom: 10,
+    lineHeight: 'normal',
   },
+  mobileMenuLink: {
+    textDecoration: 'none',
+    '&:visited': {
+      color: 'inherit',
+    }
+  }
 });
 
 class PrimarySearchAppBar extends React.Component {
@@ -127,23 +146,23 @@ class PrimarySearchAppBar extends React.Component {
   };
 
   render() {
-    const { anchorEl, mobileMoreAnchorEl } = this.state;
+    const { mobileMoreAnchorEl } = this.state;
     const { classes } = this.props;
-    const isMenuOpen = Boolean(anchorEl);
+    // const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-    const renderMenu = (
-      <Menu
-        anchorEl={anchorEl}
-        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-        transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-        open={isMenuOpen}
-        onClose={this.handleMenuClose}
-      >
-        <MenuItem onClick={this.handleMenuClose}>Profile</MenuItem>
-        <MenuItem onClick={this.handleMenuClose}>My account</MenuItem>
-      </Menu>
-    );
+    // const renderMenu = (
+    //   <Menu
+    //     anchorEl={anchorEl}
+    //     anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+    //     transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+    //     open={isMenuOpen}
+    //     onClose={this.handleMenuClose}
+    //   >
+    //     <MenuItem onClick={this.handleMenuClose}>Profile</MenuItem>
+    //     <MenuItem onClick={this.handleMenuClose}>My account</MenuItem>
+    //   </Menu>
+    // );
 
     const renderMobileMenu = (
       <Menu
@@ -154,37 +173,27 @@ class PrimarySearchAppBar extends React.Component {
         onClose={this.handleMenuClose}
       >
         <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <MailIcon />
-            </Badge>
-          </IconButton>
-          <p>Messages</p>
+          <p><a className={classes.mobileMenuLink} href='/#about'>About</a></p>
         </MenuItem>
         <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="inherit">
-            <Badge badgeContent={11} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
-          <p>Notifications</p>
+          <p><a className={classes.mobileMenuLink} href='/#job-history'>Job History</a></p>
         </MenuItem>
-        <MenuItem onClick={this.handleProfileMenuOpen}>
-          <IconButton color="inherit">
-            <AccountCircle />
-          </IconButton>
-          <p>Profile</p>
+        <MenuItem onClick={this.handleMobileMenuClose}>
+          <p><a className={classes.mobileMenuLink} href='/#testimonials'>Testimonials</a></p>
+        </MenuItem>
+        <MenuItem onClick={this.handleMobileMenuClose}>
+          <p><a className={classes.mobileMenuLink} href='/#faqs'>FAQs</a></p>
         </MenuItem>
       </Menu>
     );
 
     return (
       <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
+        <AppBar className={classes.appBar} position="static">
+          <Toolbar className={classes.toolbar}>
             <Typography variant="h6" color="inherit" className={classes.logo}>FL</Typography>
             <Typography className={classes.title} variant="h6" color="inherit" noWrap>
-              Frank Liardet Bio
+
             </Typography>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
@@ -200,7 +209,6 @@ class PrimarySearchAppBar extends React.Component {
             </div>
           </Toolbar>
         </AppBar>
-        {renderMenu}
         {renderMobileMenu}
       </div>
     );

@@ -9,8 +9,7 @@ const styles = {
     color: '#222',
     fontWeight: 700,
     position: 'relative',
-    textAlign: 'left',
-    display: 'inline',
+    display: 'inline-block',
       '&:before': {
         content: '""',
         position: 'absolute',
@@ -31,13 +30,17 @@ const styles = {
         background: '#e91e63',
       }
   },
+  headingWrapper: {
+    textAlign: 'left',
+    marginBottom: 50,
+  }
 };
 
 function SectionTitle(props) {
   const { classes } = props;
     return (
-      <div>
-        <h1 className={classes.heading}>{props.text}</h1>
+      <div className={classes.headingWrapper}>
+        <h2 className={classes.heading}>{props.text}</h2>
       </div>
     )
 }
