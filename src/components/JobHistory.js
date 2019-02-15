@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import SectionTitle from './SectionTitle';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -78,9 +79,10 @@ function JobHistory(props) {
 
   return (
     <div className={classes.root}>
+      <SectionTitle text='Job History' />
       <Grid container spacing={40}>
         {jobData.map(job => (
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} >
             <Paper className={classes.paper}>
               <Typography variant="h5" color="inherit" className={classes.jobCompany}>{job.company}</Typography>
               <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>{job.date}</Typography>
