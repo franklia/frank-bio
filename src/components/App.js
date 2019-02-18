@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../css/App.css';
+// import '../css/App.css';
 // import { BrowserRouter as Router } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { pink, blue } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
-import AppBar from './AppBar';
+import NavBar from './NavBar';
 import Intro from './Intro';
-import Background from './Background';
+import Summary from './Summary';
 import Portfolio from './Portfolio';
 import SectionTitle from './SectionTitle';
+import Faqs from './Faqs';
 // import Grid from '@material-ui/core/Grid';
 // import Typography from '@material-ui/core/Typography';
 import JobHistory from './JobHistory';
@@ -65,31 +66,40 @@ const styles = {
     maxWidth: 1040,
     margin: 'auto',
   },
+  footer: {
+    background: '#e91e63',
+    paddingTop: 10,
+    paddingBottom: 10,
+    color: '#fff',
+    fontSize: 20,
+    textAlign: 'right',
+  }
 };
 
 function App(props) {
   const { classes } = props;
+  const copyrightDate = new Date();
 
   return (
     <MuiThemeProvider theme={theme}>
       <div>
-        <AppBar />
-        <div id='job-history' className={classes.contentWrapper}>
+        <NavBar />
+        <div id='intro' className={classes.contentWrapper}>
           <Intro />
         </div>
-        <div id='about' className={classes.color}>
+        <div id='summary' className={classes.color}>
           <div className={classes.contentWrapper}>
-            <Background />
+            <Summary />
+          </div>
+        </div>
+        <div id='portfolio' className={classes.white}>
+          <div className={classes.contentWrapper}>
+            <Portfolio />
           </div>
         </div>
         <div id='job-history' className={classes.white}>
           <div className={classes.contentWrapper}>
             <JobHistory />
-          </div>
-        </div>
-        <div id='portfolio' className={classes.color}>
-          <div className={classes.contentWrapper}>
-            <Portfolio />
           </div>
         </div>
         <div id='testimonials' className={classes.white}>
@@ -100,6 +110,12 @@ function App(props) {
         <div id='faqs' className={classes.color}>
           <div className={classes.contentWrapper}>
             <SectionTitle text="FAQs" />
+            <Faqs />
+          </div>
+        </div>
+        <div className={classes.footer}>
+          <div className={classes.contentWrapper}>
+            <p>&copy; Frank Liardet {copyrightDate.getFullYear()}</p>
           </div>
         </div>
       </div>

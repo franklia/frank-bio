@@ -34,7 +34,7 @@ function JobHistory(props) {
     {
       'id': 1,
       'company': 'REFFIND Ltd',
-      'position': 'Product Manager',
+      'position': 'Head of Product',
       'date': 'Jun 2017 - Dec 2018',
       'description': 'I ran the dev team to produce the new app'
     },
@@ -54,17 +54,17 @@ function JobHistory(props) {
     },
     {
       'id': 4,
-      'company': 'Full Time Student',
-      'position': 'Cert 4 Web Development',
-      'date': 'Feb 2014 - Jul 2014',
-      'description': 'I took a caretaker role as CEO.'
+      'company': 'Freelance Web Design',
+      'position': 'Web Developer',
+      'date': 'Aug 2014 - Feb 2015',
+      'description': 'Emotive Websites was my own freelance web design business - a shortish experiment where I learned a great deal, but ultimately realised that I didn\'t enjoy working solely as a web designer. I prefer the faster pace and broader horizons of the SaaS space.'
     },
     {
       'id': 5,
-      'company': 'Freelance Web Design',
-      'position': 'Web Developer',
-      'date': 'Mar 2015 - May 2017',
-      'description': 'Emotive Websites was my own freelance web design business - a shortish experiment where I learned a great deal, but ultimately realised that I didn\'t enjoy working solely as a web designer. I prefer the faster pace and broader horizons of the SaaS space.'
+      'company': 'Full Time Student',
+      'position': 'Cert 4 Web Development - TAFE NSW',
+      'date': 'Feb 2014 - Jul 2014',
+      'description': 'I took a caretaker role as CEO.'
     },
     {
       'id': 6,
