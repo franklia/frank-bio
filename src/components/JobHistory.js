@@ -18,13 +18,15 @@ const styles = {
   },
   jobPostion: {
     clear: 'both',
+    marginBottom: 20,
   },
   jobDescription: {
     fontSize: 14,
+    marginBottom: 20,
   },
   paper: {
-    padding: 10,
-    background: '#f9f9ff',
+    padding: 30,
+    background: '#fff',
   },
 };
 
@@ -33,47 +35,120 @@ function JobHistory(props) {
   const jobData = [
     {
       'id': 1,
-      'company': 'REFFIND Ltd',
+      'company': 'WooBoard (a REFFIND company)',
       'position': 'Head of Product',
       'date': 'Jun 2017 - Dec 2018',
-      'description': 'I ran the dev team to produce the new app'
+      'description': {
+        'paragraphs': [
+          {
+            'id': 1,
+            'content': 'WooBoard is an employee recognition platform designed to assist companies improve their internal culture. WooBoard was wholely acquired by REFFIND in late 2015 (who I was working for at the time).'
+          },
+          {
+            'id': 2,
+            'content': 'My role as Head of Product was to oversee the rebuilding of the platform using new technology. This involved a full rebrand, as well as redesigning all user interfaces. I oversaw a small dev team of two throughout the process.'
+          },
+          {
+            'id': 3,
+            'content': 'Achievements included delivering the new platform in a timely fashion, as well as coordinating the migration process for all customers (including database migration).'
+          }
+        ]}
     },
     {
       'id': 2,
       'company': 'REFFIND Ltd',
       'position': 'CEO',
       'date': 'Jun 2017 - Dec 2017',
-      'description': 'I took a caretaker role as CEO.'
+      'description': {
+        'paragraphs': [
+          {
+            'id': 1,
+            'content': 'REFFIND is an ASX listed company in the HR space. Initially it only had an employee referral app, but then acquired WooBoard.'
+          },
+          {
+            'id': 2,
+            'content': 'After a period of great turmoil which saw a lot of staff redundancies and Board machinations, I was offered the role of CEO. By this stage REFFIND was in a lot of trouble in terms of not meeting shareholder expectations.'
+          },
+          {
+            'id': 3,
+            'content': 'During my short stint as CEO, I took the Board through a strategic review of company operations, and helped formulate a new direction for the business. I assisted the Board in reducing costs and streamlining operations. As a result of reduced staff, I was also covering the Product Manger role during this period.'
+          },
+          {
+            'id': 4,
+            'content': 'A new CEO came onboard at then end of 2017 when the Board made a strategic investment into a company called Loyyal, which is in the Customer Loyalty space.'
+          }
+        ]}
     },
     {
       'id': 3,
       'company': 'REFFIND Ltd',
       'position': 'Customer Support Manager',
       'date': 'Mar 2015 - May 2017',
-      'description': 'I took a caretaker role as CEO.'
+      'description': {
+        'paragraphs': [
+          {
+            'id': 1,
+            'content': 'I was one of the first employees at REFFIND and headed up Customer Service. In this role I quickly learned SQL to reduce my reliance on the dev team to diagnose support issues and produce customer reports. After REFFIND acquired WooBoard in late 2015, I was also responsible for supporting that platform.'
+          }
+        ]}
     },
     {
       'id': 4,
       'company': 'Freelance Web Design',
       'position': 'Web Developer',
       'date': 'Aug 2014 - Feb 2015',
-      'description': 'Emotive Websites was my own freelance web design business - a shortish experiment where I learned a great deal, but ultimately realised that I didn\'t enjoy working solely as a web designer. I prefer the faster pace and broader horizons of the SaaS space.'
+      'description': {
+        'paragraphs': [
+          {
+            'id': 1,
+            'content': 'Emotive Websites was my own freelance web design business - a short experiment where I learned a great deal, but ultimately realised that I didn\'t enjoy working solely as a web designer.'
+          }
+        ]}
     },
     {
       'id': 5,
       'company': 'Full Time Student',
       'position': 'Cert 4 Web Development - TAFE NSW',
-      'date': 'Feb 2014 - Jul 2014',
-      'description': 'I took a caretaker role as CEO.'
+      'date': 'Feb - Jul 2014',
+      'description': {
+        'paragraphs': [
+          {
+            'id': 1,
+            'content': 'I spent six months fulltime completing the course I originally began studying at nights.'
+          }
+        ]}
     },
     {
       'id': 6,
       'company': 'Connect2Field',
       'position': 'Customer Support Manager',
       'date': 'Sep 2012 - Feb 2014',
-      'description': 'Connect2Field (now Fleetmatics Work) provides cloud based job management and scheduling software for businesses running a team of fieldworkers.'
-    }
-  ];
+      'description': {
+        'paragraphs': [
+          {
+            'id': 1,
+            'content': 'Connect2Field (now Verizon Connect) provides cloud based job management and scheduling software for businesses running a team of fieldworkers. After doing a brief stint in sales, I moved to tech support, and was soon recruiting and leading a support team of five.'
+          },
+          {
+            'id': 2,
+            'content': 'Responsibilities included troubleshooting customer issues, communicating with offshore devs to get bugs fixed, testing new releases, and training new staff members.'
+          }
+        ]}
+      },
+      {
+        'id': 7,
+        'company': 'Prior Career in Fitness Coaching',
+        'position': 'Personal Trainer and Strength & Condioning Coach',
+        'date': '1996 - 2012',
+        'description': {
+          'paragraphs': [
+            {
+              'id': 1,
+              'content': 'My first career was in fitness coaching, where I worked with National and Olympic level athletes as well as owning and operating a boutique personal training studio.'
+            }
+          ]}
+        }
+    ];
 
   console.log(jobData);
 
@@ -87,7 +162,9 @@ function JobHistory(props) {
               <Typography variant="h5" color="inherit" className={classes.jobCompany}>{job.company}</Typography>
               <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>{job.date}</Typography>
               <Typography variant="h6" color="inherit" className={classes.jobPostion}>{job.position}</Typography>
-              <p className={classes.jobDescription}>{job.description}</p>
+              {job.description.paragraphs.map(paragraph => (
+                <p className={classes.jobDescription}>{paragraph.content}</p>
+              ))}
             </Paper>
           </Grid>
         ))}

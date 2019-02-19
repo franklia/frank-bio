@@ -1,6 +1,6 @@
 ## Bio Website
 
-I created this project as a simple online resume while searching for a software developer role. It uses Material UI to assist with the layout and design.
+I created this project as a simple online resume suitable for a software developer. It uses Material UI to assist with the layout and design.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

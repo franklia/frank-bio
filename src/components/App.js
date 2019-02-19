@@ -9,8 +9,8 @@ import NavBar from './NavBar';
 import Intro from './Intro';
 import Summary from './Summary';
 import Portfolio from './Portfolio';
-import SectionTitle from './SectionTitle';
 import Faqs from './Faqs';
+import Testimonials from './Testimonials';
 // import Grid from '@material-ui/core/Grid';
 // import Typography from '@material-ui/core/Typography';
 import JobHistory from './JobHistory';
@@ -41,7 +41,7 @@ const theme = createMuiTheme({
     },
     h6: {
       fontFamily: 'Roboto',
-      fontSize: 13,
+      fontSize: 15,
     }
   },
   // custom: {
@@ -97,19 +97,18 @@ function App(props) {
             <Portfolio />
           </div>
         </div>
-        <div id='job-history' className={classes.white}>
+        <div id='job-history' className={classes.color}>
           <div className={classes.contentWrapper}>
             <JobHistory />
           </div>
         </div>
         <div id='testimonials' className={classes.white}>
           <div className={classes.contentWrapper}>
-            <SectionTitle text='Testimonials' />
+            <Testimonials />
           </div>
         </div>
         <div id='faqs' className={classes.color}>
           <div className={classes.contentWrapper}>
-            <SectionTitle text="FAQs" />
             <Faqs />
           </div>
         </div>

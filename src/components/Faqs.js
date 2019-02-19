@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import SectionTitle from './SectionTitle';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -14,12 +15,8 @@ const styles = theme => ({
   heading: {
     fontSize: theme.typography.pxToRem(15),
     flexShrink: 0,
-    color: theme.palette.primary.main
+    fontWeight: 500,
   },
-  // secondaryHeading: {
-  //   fontSize: theme.typography.pxToRem(15),
-  //   color: theme.palette.text.secondary,
-  // },
   icon: {
     color: theme.palette.primary.main,
   },
@@ -42,6 +39,7 @@ class Faqs extends React.Component {
 
     return (
       <div className={classes.root}>
+        <SectionTitle text="FAQs" />
         <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />} >
             <Typography className={classes.heading}>You appear to have chopped and changed a bit in your tech career so far. Why is that?</Typography>
@@ -49,7 +47,7 @@ class Faqs extends React.Component {
           <ExpansionPanelDetails>
             <Typography>
               This is simply the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my two tech support roles to support myself while I gained knowledge as a programmer.<br /><br />
-              As a result of immense upheaval at REFFIND, the opportunity arose to take on the CEO role and I thought it would be crazy not to take it. During that time I also covered the Product Manager role, which was what the business needed at the time (we had a skeleton staff at that time).
+              As a result of immense upheaval at REFFIND, the opportunity arose to take on the CEO role and I thought it would be crazy not to take it. During that time I also covered the Product Manager role, which was what the business needed at the time (we had limited staff covering a number of roles).
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -59,29 +57,17 @@ class Faqs extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              I would like to be a CTO and I believe that commercial coding experience is ultimately the best way to achieve this.
+              I would like to be a CTO and I believe that commercial coding experience is ultimately the best path to achieve this.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.heading}>Another FAQ</Typography>
+            <Typography className={classes.heading}>Why should we hire you?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas
-              eros, vitae egestas augue. Duis vel est augue.
-            </Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-        <ExpansionPanel expanded={expanded === 'panel4'} onChange={this.handleChange('panel4')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.heading}>Another FAQ</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>
-              Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas
-              eros, vitae egestas augue. Duis vel est augue.
+              Because I'll go to lengths
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
