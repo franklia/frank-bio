@@ -66,10 +66,11 @@ function Testimonials(props) {
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={4}>
           <Paper className={classNames(classes.paper, classes.paper2)}>
-            <p>Blah blah blah Frank is amazing, blah blah, he could even be the GOAT blah blah.</p>
-            <p>Blah blah blah more dribble about how great Frank is, rah rah, he could even be the GOAT of all GOATS puke puke, the end.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <Avatar alt="Colin Wong" src={colin} className={classes.avatar} classes={{ root: classes.root }} />
             <Typography variant="h5" color="inherit">Colin Wong</Typography>
+            <p>Former CEO of WooBoard</p>
             <p>Founder of Gathered Here</p>
           </Paper>
         </Grid>

@@ -51,7 +51,7 @@ function Portfolio(props) {
         <Grid className={classes.gridItem} item xs={12} md={4}>
           <Paper className={classNames(classes.paper, classes.paper2)}>
             <Typography variant="h5" color="inherit">Spot Quiz</Typography>
-            <p>Spot Quiz is a simple app I created to help myself learn. It was built using React, Mongo and Node (Express.js). The interface allows me to pre-enter questions and answers according to a specific category, and then I can test myself later.</p>
+            <p>Spot Quiz is an app I created to help myself learn. It was built using React, Mongo and Node (Express.js). The interface allows me to pre-enter questions and answers according to a specific category, and then I can test myself later.</p>
             <p>Github: </p>
             <p>Web: </p>
           </Paper>
@@ -59,7 +59,7 @@ function Portfolio(props) {
         <Grid className={classes.gridItem} item xs={12} md={4}>
           <Paper className={classNames(classes.paper, classes.paper3)}>
           <Typography variant="h5" color="inherit">Feedsta</Typography>
-          <p>Feedsta is a Ruby on Rails app built to assist Instagram users preview new images in their feed prior to posting them. It's currently hosted on Heroku, however it is still in Sandbox mode and only available to approved users.</p>
+          <p>Feedsta is a Ruby on Rails app built to assist Instagram users preview new images in their feed prior to posting them. It's currently hosted on Heroku, however it is still in Sandbox mode on the Instagram API and only available to approved users.</p>
           <p>Github: https://github.com/franklia/feedsta</p>
           </Paper>
         </Grid>

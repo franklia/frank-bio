@@ -42,11 +42,11 @@ function JobHistory(props) {
         'paragraphs': [
           {
             'id': 1,
-            'content': 'WooBoard is an employee recognition platform designed to assist companies improve their internal culture. WooBoard was wholely acquired by REFFIND in late 2015 (who I was working for at the time).'
+            'content': 'WooBoard is an employee recognition platform designed to assist companies improve their internal culture. WooBoard was wholely acquired by REFFIND (who I was working for at the time) in late 2015.'
           },
           {
             'id': 2,
-            'content': 'My role as Head of Product was to oversee the rebuilding of the platform using new technology. This involved a full rebrand, as well as redesigning all user interfaces. I oversaw a small dev team of two throughout the process.'
+            'content': 'My role as Head of Product was to oversee the rebuilding of the platform using new technology. This involved a full rebrand, as well as redesigning all user interfaces. I oversaw a small development team of two throughout the process.'
           },
           {
             'id': 3,
@@ -63,19 +63,15 @@ function JobHistory(props) {
         'paragraphs': [
           {
             'id': 1,
-            'content': 'REFFIND is an ASX listed company in the HR space. Initially it only had an employee referral app, but then acquired WooBoard.'
+            'content': 'REFFIND is an ASX listed company in the HR space. Initially it\'s only offering was an employee referral app, but then also acquired WooBoard.'
           },
           {
             'id': 2,
-            'content': 'After a period of great turmoil which saw a lot of staff redundancies and Board machinations, I was offered the role of CEO. By this stage REFFIND was in a lot of trouble in terms of not meeting shareholder expectations.'
+            'content': 'After a period of great turmoil which saw a large reduction in staff numbers, I was offered the role as CEO. During my short stint in this position, my first task was to take the Board through a strategic review of company operations, and help formulate a new way forward for the business. I also assisted in reducing costs and streamlining operations. In our new lean format, I was also covering the Product Manger role on WooBoard during this period.'
           },
           {
             'id': 3,
-            'content': 'During my short stint as CEO, I took the Board through a strategic review of company operations, and helped formulate a new direction for the business. I assisted the Board in reducing costs and streamlining operations. As a result of reduced staff, I was also covering the Product Manger role during this period.'
-          },
-          {
-            'id': 4,
-            'content': 'A new CEO came onboard at then end of 2017 when the Board made a strategic investment into a company called Loyyal, which is in the Customer Loyalty space.'
+            'content': 'A new CEO came onboard at the end of 2017 when the Board made a pivot into the Customer Loyalty space via a large strategic investment into a company called Loyyal.'
           }
         ]}
     },
@@ -88,7 +84,7 @@ function JobHistory(props) {
         'paragraphs': [
           {
             'id': 1,
-            'content': 'I was one of the first employees at REFFIND and headed up Customer Service. In this role I quickly learned SQL to reduce my reliance on the dev team to diagnose support issues and produce customer reports. After REFFIND acquired WooBoard in late 2015, I was also responsible for supporting that platform.'
+            'content': 'As one of the first employees at REFFIND my role was to establish and lead Customer Support. During this time I learned SQL to reduce my reliance on the dev team to diagnose support issues and produce customer reports. After REFFIND acquired WooBoard in late 2015, I was also responsible for customer support services for that platform.'
           }
         ]}
     },
@@ -101,7 +97,7 @@ function JobHistory(props) {
         'paragraphs': [
           {
             'id': 1,
-            'content': 'Emotive Websites was my own freelance web design business - a short experiment where I learned a great deal, but ultimately realised that I didn\'t enjoy working solely as a web designer.'
+            'content': 'Emotive Websites was my own freelance web design business - a short experiment where I learned a great deal, but ultimately realised that I didn\'t enjoy working solely as a web developer and wanted to go back to working in a team environment.'
           }
         ]}
     },

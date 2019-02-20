@@ -46,7 +46,7 @@ class Faqs extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              This is simply the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my two tech support roles to support myself while I gained knowledge as a programmer.<br /><br />
+              This is merely the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my two tech support roles to support myself while I gained knowledge as a programmer.<br /><br />
               As a result of immense upheaval at REFFIND, the opportunity arose to take on the CEO role and I thought it would be crazy not to take it. During that time I also covered the Product Manager role, which was what the business needed at the time (we had limited staff covering a number of roles).
             </Typography>
           </ExpansionPanelDetails>
@@ -63,11 +63,11 @@ class Faqs extends React.Component {
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.heading}>Why should we hire you?</Typography>
+            <Typography className={classes.heading}>How many Microsoft technicians does it take to change a light bulb?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              Because I'll go to lengths
+              Three. Two holding the ladder and one to screw the light bulb into a faucet.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
