@@ -14,7 +14,6 @@ import Testimonials from './Testimonials';
 // import Grid from '@material-ui/core/Grid';
 // import Typography from '@material-ui/core/Typography';
 import JobHistory from './JobHistory';
-// import Paper from '@material-ui/core/Paper';
 
 const theme = createMuiTheme({
   palette: {
@@ -41,12 +40,9 @@ const theme = createMuiTheme({
     },
     h6: {
       fontFamily: 'Roboto',
-      fontSize: 15,
-    }
+      fontSize: 16,
+    },
   },
-  // custom: {
-  //
-  // }
 });
 
 const styles = {
@@ -56,7 +52,8 @@ const styles = {
     paddingBottom: 90,
   },
   color: {
-    background: '#f9f9ff',
+    // background: '#f9f9ff',
+    background: '#f9f9f9',
     paddingTop: 30,
     paddingBottom: 90,
   },
@@ -72,8 +69,14 @@ const styles = {
     paddingBottom: 10,
     color: '#fff',
     fontSize: 20,
+  },
+  footerText: {
+    margin: 10,
     textAlign: 'right',
-  }
+    '@media (max-width: 959px)': {
+      textAlign: 'center',
+    },
+  },
 };
 
 function App(props) {
@@ -114,9 +117,9 @@ function App(props) {
         </div>
         <div className={classes.footer}>
           <div className={classes.contentWrapper}>
-            <p>&copy; Frank Liardet {copyrightDate.getFullYear()}</p>
+              <p className={classes.footerText}>&copy; Frank Liardet {copyrightDate.getFullYear()}</p>
+            </div>
           </div>
-        </div>
       </div>
     </MuiThemeProvider>
   );

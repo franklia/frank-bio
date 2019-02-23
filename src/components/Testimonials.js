@@ -11,16 +11,16 @@ import gary from '../images/gary.jpeg';
 import steve from '../images/steve.jpeg';
 
 const styles = theme => ({
+  root: {
+    margin: 'auto',
+  },
   gridItem: {
     display: 'flex',
-    // padding: 10,
   },
   paper: {
     padding: 20,
     flexGrow: 1,
     background: theme.palette.primary.main,
-    // background: '#90ACD1',
-    // background: '#2088BA',
     '& h5': {
       color: '#fff',
       marginTop: 15,
@@ -34,18 +34,13 @@ const styles = theme => ({
     },
   },
   avatar: {
-    // margin: 10,
     width: 120,
     height: 120,
+    marginTop: 35
   },
   letterAvatar: {
     width: 120,
     height: 120,
-    background: ''
-  },
-  root: {
-    margin: 'auto',
-    marginTop: 20,
   },
 });
 
@@ -71,7 +66,6 @@ function Testimonials(props) {
             <Avatar alt="Colin Wong" src={colin} className={classes.avatar} classes={{ root: classes.root }} />
             <Typography variant="h5" color="inherit">Colin Wong</Typography>
             <p>Former CEO of WooBoard</p>
-            <p>Founder of Gathered Here</p>
           </Paper>
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={4}>

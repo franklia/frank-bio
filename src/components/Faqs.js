@@ -7,15 +7,18 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ContactMeButton from './ContactMeButton';
 
 const styles = theme => ({
   root: {
     width: '100%',
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    flexShrink: 0,
+  question: {
+    fontSize: 18,
     fontWeight: 500,
+  },
+  answer: {
+    fontSize: 16,
   },
   icon: {
     color: theme.palette.primary.main,
@@ -42,10 +45,10 @@ class Faqs extends React.Component {
         <SectionTitle text="FAQs" />
         <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />} >
-            <Typography className={classes.heading}>You appear to have chopped and changed a bit in your tech career so far. Why is that?</Typography>
+            <Typography className={classes.question}>You appear to have chopped and changed a bit in your tech career so far. Why is that?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography className={classes.answer}>
               This is merely the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my two tech support roles to support myself while I gained knowledge as a programmer.<br /><br />
               As a result of immense upheaval at REFFIND, the opportunity arose to take on the CEO role and I thought it would be crazy not to take it. During that time I also covered the Product Manager role, which was what the business needed at the time (we had limited staff covering a number of roles).
             </Typography>
@@ -53,20 +56,20 @@ class Faqs extends React.Component {
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel2'} onChange={this.handleChange('panel2')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.heading}>Where do you see your career ultimately heading?</Typography>
+            <Typography className={classes.question}>Where do you see your career ultimately heading?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography className={classes.answer}>
               I would like to be a CTO and I believe that commercial coding experience is ultimately the best path to achieve this.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.heading}>How many Microsoft technicians does it take to change a light bulb?</Typography>
+            <Typography className={classes.question}>How many Microsoft technicians does it take to change a light bulb?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>
+            <Typography className={classes.answer}>
               Three. Two holding the ladder and one to screw the light bulb into a faucet.
             </Typography>
           </ExpansionPanelDetails>

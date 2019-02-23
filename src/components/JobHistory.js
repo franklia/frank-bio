@@ -21,7 +21,7 @@ const styles = {
     marginBottom: 20,
   },
   jobDescription: {
-    fontSize: 14,
+    // fontSize: 15,
     marginBottom: 20,
   },
   paper: {

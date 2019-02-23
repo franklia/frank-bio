@@ -32,6 +32,16 @@ const styles = theme => ({
         color: '#3c3c3c',
     }
   },
+  portfolioLinksWhite: {
+    color: '#fff',
+    textDecoration: 'none',
+    fontWeight: 600,
+  },
+  portfolioLinksColor: {
+    color: '#3c3c3c',
+    textDecoration: 'none',
+    fontWeight: 500,
+  },
 });
 
 function Portfolio(props) {
@@ -44,23 +54,23 @@ function Portfolio(props) {
           <Paper className={classNames(classes.paper, classes.paper1)}>
             <Typography variant="h5" color="inherit">This Website</Typography>
             <p>I took the opportunity to gain further React experience by using it to build this website. Being a simple site, it has no backend, and minimal need to maintain state. I used Material UI to assist with the layout and design.</p>
-            <p>Github: https://github.com/franklia/frank-bio</p>
-            <p>Web: </p>
+            <p>Github: <a className={classes.portfolioLinksWhite} href='https://github.com/franklia/frank-bio'>github.com/franklia/frank-bio</a></p>
+            <p>Web: <a className={classes.portfolioLinksWhite} href='http://frank.loboadventures.com.au'>frank.loboadventures.com.au</a></p>
           </Paper>
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={4}>
           <Paper className={classNames(classes.paper, classes.paper2)}>
             <Typography variant="h5" color="inherit">Spot Quiz</Typography>
             <p>Spot Quiz is an app I created to help myself learn. It was built using React, Mongo and Node (Express.js). The interface allows me to pre-enter questions and answers according to a specific category, and then I can test myself later.</p>
-            <p>Github: </p>
-            <p>Web: </p>
+            <p>Github: Yet to be added</p>
+            <p>Web: Yet to be added</p>
           </Paper>
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={4}>
           <Paper className={classNames(classes.paper, classes.paper3)}>
           <Typography variant="h5" color="inherit">Feedsta</Typography>
           <p>Feedsta is a Ruby on Rails app built to assist Instagram users preview new images in their feed prior to posting them. It's currently hosted on Heroku, however it is still in Sandbox mode on the Instagram API and only available to approved users.</p>
-          <p>Github: https://github.com/franklia/feedsta</p>
+          <p>Github: <a className={classes.portfolioLinksColor} href='https://github.com/franklia/feedsta'>github.com/franklia/feedsta</a></p>
           </Paper>
         </Grid>
       </Grid>

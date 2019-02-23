@@ -9,6 +9,12 @@ import { withStyles } from '@material-ui/core/styles';
 // import Divider from '@material-ui/core/Divider';
 
 const styles = theme => ({
+  root: {
+    '@media (max-width: 959px)': {
+      display: 'block',
+      margin: 'auto',
+    },
+  },
   modalTitle: {
     fontSize: 20,
   },
@@ -31,8 +37,8 @@ class ContactMeButton extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div>
-        <Button variant="contained" color="primary" size="large" onClick={this.handleClickOpen}>
+      <>
+        <Button variant="contained" color="primary" size="large" className={classes.root} onClick={this.handleClickOpen}>
           Contact Me
         </Button>
         <Dialog
@@ -55,7 +61,7 @@ class ContactMeButton extends React.Component {
             </Button>
           </DialogActions>
         </Dialog>
-      </div>
+      </>
     );
   }
 }
