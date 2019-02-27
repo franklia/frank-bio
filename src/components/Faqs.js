@@ -18,6 +18,7 @@ const styles = theme => ({
   },
   answer: {
     fontSize: 16,
+    width: '100%',
   },
   icon: {
     color: theme.palette.primary.main,
