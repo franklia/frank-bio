@@ -60,12 +60,11 @@ function Background(props) {
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={6} >
           <Paper className={classes.paper}>
-          <Typography variant="h5" color="inherit">Bonus Skills</Typography>
+          <Typography variant="h5" color="inherit">Additional Skills</Typography>
           <p>Although I'm seeking a developer role, that doesn't mean you can't take advantage of my other skills and experiences if required.</p>
           <p>I'm happy to share my knowledge and experience in relation to UX / UI design, feature scoping, product strategy, general operations and team management.</p>
           </Paper>
         </Grid>
-
       </Grid>
     </>
   )

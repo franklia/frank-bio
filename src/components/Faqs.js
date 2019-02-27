@@ -7,7 +7,6 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ContactMeButton from './ContactMeButton';
 
 const styles = theme => ({
   root: {
@@ -60,17 +59,28 @@ class Faqs extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography className={classes.answer}>
-              I would like to be a CTO and I believe that commercial coding experience is ultimately the best path to achieve this.
+              I would like to be a CTO and I believe that spending a number of years working directly in the code is ultimately the best path to achieve this.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.question}>How many Microsoft technicians does it take to change a light bulb?</Typography>
+            <Typography className={classes.question}>What are the top 10 replies by programmers when their code doesn't work?</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography className={classes.answer}>
-              Three. Two holding the ladder and one to screw the light bulb into a faucet.
+              <ol>
+                <li>That's weird...</li>
+                <li>It's never done that before.</li>
+                <li>It worked yesterday.</li>
+                <li>How is that possible?</li>
+                <li>You must have the wrong version.</li>
+                <li>There has to be something funky in your data.</li>
+                <li>It's gotta be a hardware problem.</li>
+                <li>I haven't touched that module in weeks.</li>
+                <li>It works on my machine.</li>
+                <li>Are you messing with me?</li>
+              </ol>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
