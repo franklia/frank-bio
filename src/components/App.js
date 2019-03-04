@@ -36,7 +36,7 @@ const theme = createMuiTheme({
     },
     h5: {
       fontFamily: 'Poppins',
-      fontSize: 18,
+      fontSize: 19,
     },
     h6: {
       fontFamily: 'Roboto',

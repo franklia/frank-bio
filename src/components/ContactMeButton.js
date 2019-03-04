@@ -6,17 +6,31 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { withStyles } from '@material-ui/core/styles';
-// import Divider from '@material-ui/core/Divider';
+import Divider from '@material-ui/core/Divider';
 
 const styles = theme => ({
-  root: {
+  button: {
     '@media (max-width: 959px)': {
       display: 'block',
       margin: 'auto',
     },
   },
+  dialogWrapper: {
+    paddingLeft: 25,
+    paddingRight: 25,
+  },
+  dialogContent: {
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 20,
+    '& p': {
+      color: '#000',
+    },
+  },
   modalTitle: {
     fontSize: 20,
+    paddingLeft: 0,
+    paddingRight: 0,
   },
 });
 
@@ -38,7 +52,7 @@ class ContactMeButton extends React.Component {
 
     return (
       <>
-        <Button variant="contained" color="primary" size="large" className={classes.root} onClick={this.handleClickOpen}>
+        <Button variant="contained" color="primary" size="large" className={classes.button} onClick={this.handleClickOpen}>
           Contact Me
         </Button>
         <Dialog
@@ -46,13 +60,14 @@ class ContactMeButton extends React.Component {
           onClose={this.handleClose}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
+          classes={{ paper: classes.dialogWrapper }}
         >
           <DialogTitle id="alert-dialog-title" disableTypography={true} className={classes.modalTitle}>Contact Details</DialogTitle>
-          <DialogContent>
+          <Divider />
+          <DialogContent classes={{ root: classes.dialogContent }}>
             <DialogContentText id="alert-dialog-description">
               Email: frank.liardet@gmail.com<br/>
-              Phone: 0419 418 929<br/>
-              LinkedIn: <a href='https://www.linkedin.com/in/frank-liardet-08283b5b'>https://www.linkedin.com/in/frank-liardet-08283b5b</a>
+              LinkedIn: <a href='https://www.linkedin.com/in/frank-liardet'>https://www.linkedin.com/in/frank-liardet</a>
             </DialogContentText>
           </DialogContent>
           <DialogActions>

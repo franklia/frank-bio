@@ -50,7 +50,7 @@ function JobHistory(props) {
           },
           {
             'id': 3,
-            'content': 'Achievements included delivering the new platform in a timely fashion, as well as coordinating the migration process for all customers (including database migration).'
+            'content': 'Achievements included delivering the new platform in a timely fashion, as well as coordinating the migration process for all customers (including database migration). I also designed and built the new marketing website: www.wooboard.com'
           }
         ]}
     },
@@ -84,7 +84,7 @@ function JobHistory(props) {
         'paragraphs': [
           {
             'id': 1,
-            'content': 'As one of the first employees at REFFIND my role was to establish and lead Customer Support. During this time I learned SQL to reduce my reliance on the dev team to diagnose support issues and produce customer reports. After REFFIND acquired WooBoard in late 2015, I was also responsible for customer support services for that platform.'
+            'content': 'As one of the first employees at REFFIND my role was to establish and lead Customer Support. During this time I learned SQL to reduce my reliance on the development team to diagnose support issues and produce customer reports. After REFFIND acquired WooBoard in late 2015, I was also responsible for customer support services for that platform.'
           }
         ]}
     },
@@ -123,7 +123,7 @@ function JobHistory(props) {
         'paragraphs': [
           {
             'id': 1,
-            'content': 'Connect2Field (now Verizon Connect) provides cloud based job management and scheduling software for businesses running a team of fieldworkers. After doing a brief stint in sales, I moved to tech support, and was soon recruiting and leading a support team of five.'
+            'content': 'Connect2Field (now Verizon Connect) provides cloud based job management and scheduling software for businesses running a team of fieldworkers. Initially I began in a hybrid role across both sales and support but as we grew, I began focusing solely on tech support and was soon recruiting and leading a team of five. '
           },
           {
             'id': 2,

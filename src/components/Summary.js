@@ -29,8 +29,8 @@ function Background(props) {
     <>
       <SectionTitle text='Summary' />
       <div className={classes.headParagraph}>
-        <p>For the past 6 years, whilst working in startups, I've also been learning code. I've really enjoyed coding on my own personal projects and I am now looking to transition into programming full time.</p>
-        <p>My experience working at two startups has been really broad with amazing opportunities for growth and learning. Like many startups we went through periods of rapid growth, constant change, and turbulent times. In my most recent role as Head of Product I managed the development team. I thoroughly enjoyed diving deeper into the tech and now feels the right time to transition into a role as a developer.</p>
+        <p>For the past 6 years, whilst working in startups, I've also been learning code on the side. I've really enjoyed coding on my own personal projects and I am now looking to transition into programming full time.</p>
+        <p>My experience working at two startups has been very broad, with amazing opportunities for growth and learning. Like many startups we went through periods of rapid growth, constant change, and turbulent times. In my most recent role as Head of Product I managed a small development team. I thoroughly enjoyed diving deeper into the tech and it now feels the right time to transition into a role as a developer.</p>
       </div>
       <Grid container spacing={40}>
         <Grid className={classes.gridItem} item xs={12} md={6}>

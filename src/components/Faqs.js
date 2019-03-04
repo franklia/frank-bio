@@ -7,6 +7,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import smilingEmoji from '../images/smiling_emoji.png';
 
 const styles = theme => ({
   root: {
@@ -22,6 +23,11 @@ const styles = theme => ({
   },
   icon: {
     color: theme.palette.primary.main,
+  },
+  emoji: {
+    position: 'relative',
+    left: 2,
+    top: 4,
   },
 });
 
@@ -77,11 +83,12 @@ class Faqs extends React.Component {
                 <li>How is that possible?</li>
                 <li>You must have the wrong version.</li>
                 <li>There has to be something funky in your data.</li>
-                <li>It's gotta be a hardware problem.</li>
+                <li>It's probably a hardware problem.</li>
                 <li>I haven't touched that module in weeks.</li>
                 <li>It works on my machine.</li>
                 <li>Are you messing with me?</li>
               </ol>
+              <br/><p>Thanks for reading to the end  <img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} /></p>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
