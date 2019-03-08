@@ -52,7 +52,7 @@ function Intro(props) {
       <Grid container spacing={24} className={classes.introContent}>
         <Grid item xs={12} md={6}>
           <Typography variant="h1" color="inherit" className={classes.introHeading}>Frank Liardet</Typography>
-          <Typography variant="h3" color="inherit" className={classes.introSubHeading}>Seeking a software developer role in a dynamic startup using React and Node</Typography>
+          <Typography variant="h3" color="inherit" className={classes.introSubHeading}>Seeking a software engineering role in a dynamic company using modern technologies such as React and Node</Typography>
           <ContactMeButton />
         </Grid>
         <Grid item xs={12} md={6}>

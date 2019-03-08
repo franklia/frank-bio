@@ -29,8 +29,8 @@ function Background(props) {
     <>
       <SectionTitle text='Summary' />
       <div className={classes.headParagraph}>
-        <p>For the past 6 years, whilst working in startups, I've also been learning code on the side. I've really enjoyed coding on my own personal projects and I am now looking to transition into programming full time.</p>
-        <p>My experience working at two startups has been very broad, with amazing opportunities for growth and learning. Like many startups we went through periods of rapid growth, constant change, and turbulent times. In my most recent role as Head of Product I managed a small development team. I thoroughly enjoyed diving deeper into the tech and it now feels the right time to transition into a role as a developer.</p>
+        <p>For the past 6 years, whilst working in startups, I've also been learning code and building my own web apps. I am now looking to transition into programming full time.</p>
+        <p>My experience working in two startups has been very broad, with amazing opportunities for growth and learning. Like many startups we went through periods of rapid growth and challenging times.</p><p>In my most recent role as Head of Product I managed a small development team and I thoroughly enjoyed that experience. I am now seeking a junior full stack engineering role using modern technologies such as React and Node.</p>
       </div>
       <Grid container spacing={40}>
         <Grid className={classes.gridItem} item xs={12} md={6}>
@@ -56,13 +56,14 @@ function Background(props) {
             <p>I have built my own apps using HTML5, CSS3, Sass, Bootstrap, JSON, PHP, Ruby on Rails, Javascript, React and Node - see Portfolio. </p>
             <p>I've hosted these apps on Heroku and AWS, and also used Photoshop and Illustrator to create assets.</p>
             <p>I have strong SQL skills (both  MySQL and PostgreSQL) having used them on a daily basis in my previous role to diagnose customer issues, find bugs and run reports.</p>
+            <p>Manual software QA testing (using the UI) is also an area I've had a lot of experience in.</p>
           </Paper>
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={6} >
           <Paper className={classes.paper}>
           <Typography variant="h5" color="inherit">Additional Skills</Typography>
           <p>Although I'm seeking a developer role, that doesn't mean you can't take advantage of my other skills and experiences if required.</p>
-          <p>I'm happy to share my knowledge and experience in relation to UX / UI design, feature scoping, product strategy, general operations and team management.</p>
+          <p>I'm happy to share my knowledge and experience in relation to UX / UI design, feature scoping, product strategy, and general startup strategy & operations.</p>
           </Paper>
         </Grid>
       </Grid>
