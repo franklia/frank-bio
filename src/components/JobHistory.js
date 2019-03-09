@@ -146,10 +146,10 @@ function JobHistory(props) {
             <p className={classes.jobDescription}>WooBoard is an employee recognition platform designed to assist companies improve their internal culture. WooBoard was wholly acquired by REFFIND (who I was working for at the time) in late 2015.</p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
-              <li>Overseeing the rebuilding of the entire platform using new technology</li>
+              <li>Overseeing a rebuild of the entire platform using new technology</li>
               <li>A full rebrand, including redesigning all user interfaces</li>
               <li>Managing a small development team of two</li>
-              <li>Assisting in the architectural decision making process, in collaboration with the Lead Developer</li>
+              <li>Assisting in the architectural decision making process, in collaboration with the Lead Developer and contract CTO</li>
             </ul>
             <p className={classes.jobDescription}>Achievements:</p>
             <ul>
@@ -164,9 +164,9 @@ function JobHistory(props) {
             <Typography variant="h5" color="inherit" className={classes.jobPosition}>CEO</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Jun 2017 - Dec 2017</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>REFFIND Ltd</Typography>
-            <p className={classes.jobDescription}>REFFIND is an ASX listed company in the HR space. Initially the company’s only offering was an employee referral app, but then WooBoard was also acquired.</p>
+            <p className={classes.jobDescription}>REFFIND is an ASX listed company in the HR / Customer Loyalty space. Initially the company’s only offering was an employee referral app, but then WooBoard was also acquired.</p>
             <p className={classes.jobDescription}>After a period of great turmoil which saw a large reduction in staff numbers, I was offered the role as CEO. In our new lean format, I was also covering the Product Manager role on WooBoard during this period.</p>
-            <p className={classes.jobDescription}>A new CEO came on board at the end of 2017 when the Board made a pivot into the Customer Loyalty space via a large strategic investment into a company called Loyyal.</p>
+            <p className={classes.jobDescription}>A new CEO came on board at the end of 2017 when the Board made a pivot into the Customer Loyalty space via a large strategic investment into a company called Loyyal. This allowed me to go back to focusing on the software itself, which is where my heart is.</p>
             <p className={classes.jobDescription}>Achievements:</p>
             <ul>
               <li>During my short stint in this position, my first task was to take the Board through a strategic review of our software offerings, and help formulate a new way forward for the business</li>
@@ -184,7 +184,7 @@ function JobHistory(props) {
             <ul>
               <li>Troubleshooting customer issues and following them through to resolution</li>
               <li>Using MySQL to diagnose customer issues and run reports</li>
-              <li>Ensuring new customer account were set up properly when they came onboard</li>
+              <li>Ensuring new customer accounts were set up correctly</li>
               <li>Manual software QA testing</li>
               <li>Supporting the WooBoard platform after REFFIND acquired it in late 2015</li>
             </ul>
@@ -207,7 +207,7 @@ function JobHistory(props) {
           <Paper className={classes.paper}>
             <Typography variant="h5" color="inherit" className={classes.jobPosition}>Full Time Student</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Feb - Jul 2014</Typography>
-            <Typography variant="h6" color="inherit" className={classes.jobCompany}>Cert 4 Web Design & Development - TAFE NSW</Typography>
+            <Typography variant="h6" color="inherit" className={classes.jobCompany}>TAFE NSW - Cert 4 in Web Based Technologies (Design & Development)</Typography>
             <p className={classes.jobDescription}>After studying in the evenings throughout 2013, I completed my qualification full-time during this period.</p>
           </Paper>
         </Grid>
@@ -216,7 +216,7 @@ function JobHistory(props) {
             <Typography variant="h5" color="inherit" className={classes.jobPosition}>Customer Support Manager</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Sep 2012 - Feb 2014</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>Connect2Field</Typography>
-            <p className={classes.jobDescription}>Connect2Field (now Verizon Connect) provides cloud based job management and scheduling software for businesses running a team of fieldworkers.</p>
+            <p className={classes.jobDescription}>Connect2Field (now Verizon Connect) provides job management and scheduling software for businesses running a team of fieldworkers.</p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
               <li>Troubleshooting customer issues and following them through to resolution</li>
@@ -228,7 +228,7 @@ function JobHistory(props) {
             <p className={classes.jobDescription}>Achievements:</p>
             <ul>
               <li>Recruiting, training and managing a support team of four</li>
-              <li>Managing the redesign of 4 accounting connectors (separate API integrated applications used to transfer data to MYOB, QuickBooks, Xero and Saasu)</li>
+              <li>Managing the redesign of 4 accounting connectors (API integrated applications used to transfer data to MYOB, QuickBooks, Xero and Saasu)</li>
             </ul>
           </Paper>
         </Grid>
