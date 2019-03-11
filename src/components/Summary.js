@@ -32,7 +32,7 @@ function Background(props) {
     <>
       <SectionTitle text='Summary' />
       <div className={classes.headParagraph}>
-        <p>This is not your typical CV. </p>
+        <p>I do not have a typical CV. </p>
         <p>I am a quietly determined individual and this has led me to some amazing opportunities, which I've taken. For the past 6 years, whilst working in startups, I've also been learning code and building my own web apps. I am now seeking to transition into programming full time. </p>
         <p>After reading my job history, you may think <span className={classes.italics}>WTF!? This guy is going backwards!</span> &nbsp;But you’d be wrong. </p>
         <p>Few things are more valuable in a startup than knowing the code and the architecture of your app. I am willing to absorb some short term pain (financially) in order to achieve long term success. </p>
