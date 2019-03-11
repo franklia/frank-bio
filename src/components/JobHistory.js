@@ -6,15 +6,16 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 
 const styles = {
-  jobWrapper: {
-    background: '#f9f9ff',
-    borderRadius: 5,
-  },
   jobPosition: {
     float: 'left',
   },
   jobDate: {
     float: 'right',
+    '@media (max-width: 630px)': {
+      float: 'none',
+      textAlign: 'left',
+      clear: 'left',
+    },
   },
   jobCompany: {
     clear: 'both',
@@ -62,7 +63,7 @@ function JobHistory(props) {
             <Typography variant="h5" color="inherit" className={classes.jobPosition}>CEO</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Jun 2017 - Dec 2017</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>REFFIND Ltd</Typography>
-            <p className={classes.jobDescription}>REFFIND is an ASX listed company in the HR / Customer Loyalty space. Initially the company’s only offering was an employee referral app, but then WooBoard was also acquired.</p>
+            <p className={classes.jobDescription}>REFFIND is an ASX listed startup in the HR / Customer Loyalty space. Initially the company’s only offering was an employee referral app, but then WooBoard was also acquired.</p>
             <p className={classes.jobDescription}>After a period of great turmoil which saw a large reduction in staff numbers, I was offered the role as CEO. In our new lean format, I was also covering the Product Manager role on WooBoard during this period.</p>
             <p className={classes.jobDescription}>A new CEO came on board at the end of 2017 when the Board made a pivot into the Customer Loyalty space via a large strategic investment into a company called Loyyal. This allowed me to go back to focusing on the software itself, which is where my heart is.</p>
             <p className={classes.jobDescription}>Achievements:</p>
@@ -98,7 +99,7 @@ function JobHistory(props) {
             <Typography variant="h5" color="inherit" className={classes.jobPosition}>Freelance Web Developer</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Aug 2014 - Feb 2015</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>Emotive Websites</Typography>
-            <p className={classes.jobDescription}>Emotive Websites was my own freelance web design business - a short experiment where I learned a great deal, but ultimately realised that I didn't enjoy working solely as a web developer. Hence I returned to the faster pace and broader horizons of the SaaS space.</p>
+            <p className={classes.jobDescription}>Emotive Websites was my own freelance web design business - a short experiment where I learned a great deal, but ultimately realised that I didn't enjoy solely building simple websites. Hence I returned to the faster pace and broader horizons of the SaaS space.</p>
           </Paper>
         </Grid>
         <Grid item xs={12} >

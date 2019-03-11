@@ -88,10 +88,10 @@ class Faqs extends React.Component {
                 <li>Are you messing with me?</li>
               </ol>
               <br/>
-              <p>
+              <span>
                 <img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} />
                 &nbsp;&nbsp;I don't want you to think I'm all work and no fun!
-              </p>
+              </span>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
