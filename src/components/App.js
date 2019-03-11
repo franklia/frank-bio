@@ -95,24 +95,24 @@ function App(props) {
             <Summary />
           </div>
         </div>
-        <div id='portfolio' className={classes.white}>
-          <div className={classes.contentWrapper}>
-            <Portfolio />
-          </div>
-        </div>
-        <div id='job-history' className={classes.color}>
+        <div id='job-history' className={classes.white}>
           <div className={classes.contentWrapper}>
             <JobHistory />
           </div>
         </div>
-        <div id='testimonials' className={classes.white}>
+        <div id='testimonials' className={classes.color}>
           <div className={classes.contentWrapper}>
             <Testimonials />
           </div>
         </div>
-        <div id='faqs' className={classes.color}>
+        <div id='faqs' className={classes.white}>
           <div className={classes.contentWrapper}>
             <Faqs />
+          </div>
+        </div>
+        <div id='portfolio' className={classes.color}>
+          <div className={classes.contentWrapper}>
+            <Portfolio />
           </div>
         </div>
         <div className={classes.footer}>

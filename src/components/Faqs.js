@@ -26,7 +26,6 @@ const styles = theme => ({
   },
   emoji: {
     position: 'relative',
-    left: 2,
     top: 4,
   },
 });
@@ -88,7 +87,11 @@ class Faqs extends React.Component {
                 <li>It works on my machine.</li>
                 <li>Are you messing with me?</li>
               </ol>
-              <br/><p>Thanks for reading to the end  <img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} /></p>
+              <br/>
+              <p>
+                <img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} />
+                &nbsp;&nbsp;I don't want you to think I'm all work and no fun!
+              </p>
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>

@@ -67,8 +67,8 @@ class ContactMeButton extends React.Component {
           <DialogContent classes={{ root: classes.dialogContent }}>
             <DialogContentText id="alert-dialog-description">
               Email: frank.liardet@gmail.com<br/>
-              LinkedIn: <a href='https://www.linkedin.com/in/frank-liardet' target='_blank'>https://www.linkedin.com/in/frank-liardet</a><br/>
-              Github: <a href='https://github.com/franklia' target='_blank'>https://github.com/franklia</a>
+              LinkedIn: <a href='https://www.linkedin.com/in/frank-liardet' target='_blank' rel='noopener noreferrer'>https://www.linkedin.com/in/frank-liardet</a><br/>
+              Github: <a href='https://github.com/franklia' target='_blank' rel='noopener noreferrer'>https://github.com/franklia</a>
             </DialogContentText>
           </DialogContent>
           <DialogActions>
