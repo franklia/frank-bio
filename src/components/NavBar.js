@@ -67,14 +67,12 @@ const styles = theme => ({
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    // this.scrollToId = this.scrollToId.bind(this);
 
     this.state = {
       anchorEl: null,
       mobileMoreAnchorEl: null,
     };
   }
-
 
   handleProfileMenuOpen = event => {
     this.setState({ anchorEl: event.currentTarget });
@@ -89,36 +87,14 @@ class NavBar extends React.Component {
     this.setState({ mobileMoreAnchorEl: event.currentTarget });
   };
 
-  handleMobileMenuClose = (e) => {
+  handleMobileMenuClose = () => {
     this.setState({ mobileMoreAnchorEl: null });
   };
 
-  scrollToSummary = () => {
-    const element = document.getElementById('summary');
+  scrollToId = id => {
+    const element = document.getElementById(id);
     element.scrollIntoView({behavior: 'smooth', block: 'start'});
   };
-
-  scrollToPortfolio = () => {
-    const element = document.getElementById('portfolio');
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-  };
-
-  scrollToJobHistory = () => {
-    const element = document.getElementById('job-history');
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-  };
-
-  scrollToTestimonials = () => {
-    const element = document.getElementById('testimonials');
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-  };
-
-  scrollToFaqs = () => {
-    const element = document.getElementById('faqs');
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-  };
-
-
 
   render() {
     const { mobileMoreAnchorEl } = this.state;
@@ -158,11 +134,11 @@ class NavBar extends React.Component {
             <Typography variant="h6" color="inherit" className={classes.logo}>FL</Typography>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <Button color='inherit' size='large' onClick={this.scrollToSummary}>Summary</Button>
-              <Button color='inherit' size='large' onClick={this.scrollToPortfolio}>Portfolio</Button>
-              <Button color='inherit' size='large' onClick={this.scrollToJobHistory}>Job History</Button>
-              <Button color='inherit' size='large' onClick={this.scrollToTestimonials}>Testimonials</Button>
-              <Button color='inherit' size='large' onClick={this.scrollToFaqs}>FAQs</Button>
+              <Button color='inherit' size='large' onClick={() => this.scrollToId('summary')}>Summary</Button>
+              <Button color='inherit' size='large' onClick={() => this.scrollToId('portfolio')}>Portfolio</Button>
+              <Button color='inherit' size='large' onClick={() => this.scrollToId('job-history')}>Job History</Button>
+              <Button color='inherit' size='large' onClick={() => this.scrollToId('testimonials')}>Testimonials</Button>
+              <Button color='inherit' size='large' onClick={() => this.scrollToId('faqs')}>FAQs</Button>
             </div>
             <div className={classes.sectionMobile}>
               <IconButton aria-haspopup="true" onClick={this.handleMobileMenuOpen} color="inherit">

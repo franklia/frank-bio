@@ -32,9 +32,9 @@ function Background(props) {
     <>
       <SectionTitle text='Summary' />
       <div className={classes.initialSummary}>
-        <p>You’ll notice that I don’t have a typical CV and I believe that’s a positive. Some amazing opportunities came my way and I took them, I learned a lot, and I’m now ready for the next step.</p>
-        <p>For the past 6 years, whilst working in startups, I've also been learning code and building my own websites and apps. In my most recent role as Head of Product I managed a small development team and thoroughly enjoyed delving deeper and more strategically into the tech. I am now seeking to transition into programming full time. After reading my job history, you may think <span className={classes.italics}>What the? This guy is going backwards!</span> &nbsp;But you’d be wrong. </p>
-        <p>Few things are more valuable in a tech company than knowing the code and the architecture of your apps. I am willing to take a (perceived) step backwards in order to achieve long term success. Ultimately I would like to be a CTO and this is another step along that path.</p>
+        <p>For the past 6 years, whilst working in startups, I've also been learning code and building my own websites and apps. I am now looking to transition into programming full time.</p>
+        <p>My tech career began in tech support, which allowed me to support myself whilst I built up my skill base. My current employer then offered me the opportunity to lead a project to rebuild one of our software platforms (WooBoard) as Head of Product. It was an amazing experience. In that role I managed two developers and thoroughly enjoyed delving deeper and more strategically into the tech.</p>
+        <p>I’m now at a stage where I would like to code full-time. Ultimately I would like to be a CTO and this is another step along that path.</p>
       </div>
       <Grid container spacing={40}>
         <Grid className={classes.gridItem} item xs={12} md={6}>
@@ -51,7 +51,7 @@ function Background(props) {
             <Typography variant="h5" color="inherit">Career Summary</Typography>
             <p>My first startup role was at Connect2Field providing tech support for a SaaS product in the fieldworker space. We grew quickly and I was soon recruiting and leading the support team. In the evenings I studied web development.</p>
             <p>Connect2Field was then acquired by a larger US firm and I experienced all that came with that process.</p>
-            <p>Following a brief stint as a freelance web developer, I joined REFFIND as Customer Support Manager. We listed on the ASX four months later and went on a rollercoaster ride. In an unlikely turn of events, I ended up in the CEO role for six months, prior to becoming Head of Product.</p>
+            <p>Following a brief stint as a freelance web developer, I joined REFFIND as Tech Support Manager. We listed on the ASX four months later and went on a rollercoaster ride. Later I was given the opportunity to lead a project to rebuild one of our software platforms (WooBoard) as Head of Product.</p>
           </Paper>
         </Grid>
         <Grid className={classes.gridItem} item xs={12} md={6} >
@@ -66,8 +66,10 @@ function Background(props) {
         <Grid className={classes.gridItem} item xs={12} md={6} >
           <Paper className={classes.paper}>
           <Typography variant="h5" color="inherit">Additional Skills</Typography>
-          <p>Although I'm seeking a developer role, that doesn't mean you can't take advantage of my other skills and experiences if required.</p>
-          <p>I'm happy to share my knowledge and experience in relation to UX / UI design, feature scoping, product strategy, and general startup strategy & operations.</p>
+          <p></p>
+          <p>Although I'm seeking a developer role, that doesn't mean you can't take advantage of my other skills and experiences when required.</p>
+          <p>I'm happy to share my knowledge in relation to UX / UI, design, feature scoping and product strategy.</p>
+          <p>As someone who has worked across different business areas, I bring a circumspect view and can explain complex concepts in clear language to non-technical stakeholders</p>
           </Paper>
         </Grid>
       </Grid>

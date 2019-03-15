@@ -20,6 +20,7 @@ const styles = theme => ({
   answer: {
     fontSize: 16,
     width: '100%',
+    lineHeight: 1.5
   },
   icon: {
     color: theme.palette.primary.main,
@@ -27,6 +28,11 @@ const styles = theme => ({
   emoji: {
     position: 'relative',
     top: 4,
+    left: 4,
+  },
+  displayBlock: {
+    display: 'block',
+    paddingTop: 0,
   },
 });
 
@@ -54,8 +60,7 @@ class Faqs extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography className={classes.answer}>
-              This is merely the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my two tech support roles to support myself while I gained knowledge as a programmer.<br /><br />
-              As a result of immense upheaval at REFFIND, the opportunity arose to take on the CEO role and I thought it would be crazy not to take it. During that time I also covered the Product Manager role, which was what the business needed at the time (we had limited staff covering a number of roles).
+              This is merely the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my previous roles to support myself while I gained startup experience and knowledge as a programmer.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -73,8 +78,8 @@ class Faqs extends React.Component {
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
             <Typography className={classes.question}>What are the top 10 replies by programmers when their code doesn't work?</Typography>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography className={classes.answer}>
+          <ExpansionPanelDetails classes={{ root: classes.displayBlock }}>
+            <div className={classes.answer}>
               <ol>
                 <li>That's weird...</li>
                 <li>It's never done that before.</li>
@@ -87,12 +92,8 @@ class Faqs extends React.Component {
                 <li>It works on my machine.</li>
                 <li>Are you messing with me?</li>
               </ol>
-              <br/>
-              <span>
-                <img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} />
-                &nbsp;&nbsp;I don't want you to think I'm all work and no fun!
-              </span>
-            </Typography>
+              <p>It's important to work hard, but also to have a laugh!<img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} /></p>
+            </div>
           </ExpansionPanelDetails>
         </ExpansionPanel>
       </div>

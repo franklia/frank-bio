@@ -39,7 +39,7 @@ function JobHistory(props) {
       <Grid container spacing={40}>
         <Grid item xs={12} >
           <Paper className={classes.paper}>
-            <Typography variant="h5" color="inherit" className={classes.jobPosition}>Product Manager</Typography>
+            <Typography variant="h5" color="inherit" className={classes.jobPosition}>Head of Product</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Jun 2017 - Present</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>WooBoard (a REFFIND company)</Typography>
             <p className={classes.jobDescription}>WooBoard is an employee recognition platform designed to assist companies improve their internal culture. WooBoard was wholly acquired by REFFIND (who I was working for at the time) in late 2015.</p>
@@ -54,31 +54,16 @@ function JobHistory(props) {
             <ul>
               <li>Delivering the new platform in a timely fashion</li>
               <li>Coordinating the migration process to the new platform for all customers (including database migration)</li>
-              <li>I also designed and built the new marketing website: <a href='https://wooboard.com' target='_blank' rel='noopener noreferrer'>wooboard.com</a></li>
+              <li>I also personally designed and built the new marketing website: <a href='https://wooboard.com' target='_blank' rel='noopener noreferrer'>wooboard.com</a></li>
             </ul>
           </Paper>
         </Grid>
         <Grid item xs={12} >
           <Paper className={classes.paper}>
-            <Typography variant="h5" color="inherit" className={classes.jobPosition}>CEO</Typography>
-            <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Jun 2017 - Dec 2017</Typography>
-            <Typography variant="h6" color="inherit" className={classes.jobCompany}>REFFIND Ltd</Typography>
-            <p className={classes.jobDescription}>REFFIND is an ASX listed startup in the HR / Customer Loyalty space. Initially the company’s only offering was an employee referral app, but then WooBoard was also acquired.</p>
-            <p className={classes.jobDescription}>After a period of great turmoil which saw a large reduction in staff numbers, I was offered the role as CEO. In our new lean format, I was also covering the Product Manager role on WooBoard during this period.</p>
-            <p className={classes.jobDescription}>A new CEO came on board at the end of 2017 when the Board made a pivot into the Customer Loyalty space via a large strategic investment into a company called Loyyal. This allowed me to go back to focusing on the software itself, which is where my heart is.</p>
-            <p className={classes.jobDescription}>Achievements:</p>
-            <ul>
-              <li>During my short stint in this position, my first task was to take the Board through a strategic review of our software offerings, and help formulate a new way forward for the business</li>
-              <li>I also assisted in reducing costs and streamlining operations</li>
-            </ul>
-          </Paper>
-        </Grid>
-        <Grid item xs={12} >
-          <Paper className={classes.paper}>
-            <Typography variant="h5" color="inherit" className={classes.jobPosition}>Customer Support Manager</Typography>
+            <Typography variant="h5" color="inherit" className={classes.jobPosition}>Tech Support Manager</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Mar 2015 - May 2017</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>REFFIND Ltd</Typography>
-            <p className={classes.jobDescription}>As one of the first employees at REFFIND my role was to establish and lead Customer Support.</p>
+            <p className={classes.jobDescription}>REFFIND is an ASX listed startup in the HR / Customer Loyalty space. Initially the company’s only offering was an employee referral app, but then WooBoard was also acquired. As one of the first employees at REFFIND my role was to establish and lead the area of Tech Support.</p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
               <li>Troubleshooting customer issues and following them through to resolution</li>
@@ -112,7 +97,7 @@ function JobHistory(props) {
         </Grid>
         <Grid item xs={12} >
           <Paper className={classes.paper}>
-            <Typography variant="h5" color="inherit" className={classes.jobPosition}>Customer Support Manager</Typography>
+            <Typography variant="h5" color="inherit" className={classes.jobPosition}>Tech Support Manager</Typography>
             <Typography variant="h6" color="inherit" align='right' className={classes.jobDate}>Sep 2012 - Feb 2014</Typography>
             <Typography variant="h6" color="inherit" className={classes.jobCompany}>Connect2Field</Typography>
             <p className={classes.jobDescription}>Connect2Field (now Verizon Connect) provides job management and scheduling software for businesses running a team of fieldworkers.</p>

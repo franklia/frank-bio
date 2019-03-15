@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import '../css/App.css';
-// import { BrowserRouter as Router } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { pink, blue } from '@material-ui/core/colors';
 import { withStyles } from '@material-ui/core/styles';
@@ -11,8 +9,6 @@ import Summary from './Summary';
 import Portfolio from './Portfolio';
 import Faqs from './Faqs';
 import Testimonials from './Testimonials';
-// import Grid from '@material-ui/core/Grid';
-// import Typography from '@material-ui/core/Typography';
 import JobHistory from './JobHistory';
 
 const theme = createMuiTheme({
