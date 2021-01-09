@@ -43,14 +43,15 @@ function JobHistory(props) {
               Full Stack Developer
             </Typography>
             <Typography variant='h6' color='inherit' align='right' className={classes.jobDate}>
-              Jul 2019 - Present
+              Jul 2019 - Jun 2020
             </Typography>
             <Typography variant='h6' color='inherit' className={classes.jobCompany}>
               ELMO Cloud HR & Payroll
             </Typography>
             <p className={classes.jobDescription}>
               ELMO provides a comprehensive suite of cloud HR, payroll and rostering / time & attendance software
-              solutions that can be accessed via a single dashboard and customised for any organisation
+              solutions. I was part of a team tasked with building a suite of internal tools to automate employee tasks
+              and aggregate distributed information.
             </p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
@@ -101,12 +102,12 @@ function JobHistory(props) {
               <li>
                 Coordinating the migration process to the new platform for all customers (including database migration)
               </li>
-              <li>
+              {/* <li>
                 I also personally designed and built the new marketing website:{' '}
                 <a href='https://wooboard.com' target='_blank' rel='noopener noreferrer'>
                   wooboard.com
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Paper>
         </Grid>
@@ -139,7 +140,8 @@ function JobHistory(props) {
               <li>Learning SQL to diagnose support issues and produce customer reports</li>
               <li>
                 Developing an overall knowledge of our software platforms and service offerings (end to end) to such an
-                extent that I became the person that others turned to when there was a problem they couldn't resolve
+                extent that I became the person that my colleagues turned to when there was a problem they couldn't
+                resolve
               </li>
             </ul>
           </Paper>
@@ -157,8 +159,8 @@ function JobHistory(props) {
             </Typography>
             <p className={classes.jobDescription}>
               Emotive Websites was my own freelance web design business - a short experiment where I learned a great
-              deal, but ultimately realised that I didn't enjoy solely building simple websites. Hence I returned to the
-              faster pace and broader horizons of the SaaS space.
+              deal, but ultimately realised that I didn't enjoy solely building simple WordPress websites. Hence I
+              returned to the faster pace and broader horizons of the SaaS space.
             </p>
           </Paper>
         </Grid>
@@ -207,8 +209,8 @@ function JobHistory(props) {
             <ul>
               <li>Recruiting, training and managing a support team of four</li>
               <li>
-                Managing the redesign of 4 accounting connectors (API integrated applications used to transfer data to
-                MYOB, QuickBooks, Xero and Saasu)
+                Managing the redesign of four accounting connectors (API integrated applications used to transfer data
+                to MYOB, QuickBooks, Xero and Saasu)
               </li>
             </ul>
           </Paper>

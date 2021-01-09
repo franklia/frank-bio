@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import smilingEmoji from '../images/smiling_emoji.png';
 
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     width: '100%',
   },
@@ -20,7 +20,7 @@ const styles = theme => ({
   answer: {
     fontSize: 16,
     width: '100%',
-    lineHeight: 1.5
+    lineHeight: 1.5,
   },
   icon: {
     color: theme.palette.primary.main,
@@ -41,7 +41,7 @@ class Faqs extends React.Component {
     expanded: null,
   };
 
-  handleChange = panel => (event, expanded) => {
+  handleChange = (panel) => (event, expanded) => {
     this.setState({
       expanded: expanded ? panel : false,
     });
@@ -53,14 +53,18 @@ class Faqs extends React.Component {
 
     return (
       <div className={classes.root}>
-        <SectionTitle text="FAQs" />
+        <SectionTitle text='FAQs' />
         <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
-          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />} >
-            <Typography className={classes.question}>You appear to have chopped and changed a bit in your tech career so far. Why is that?</Typography>
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
+            <Typography className={classes.question}>
+              You appear to have chopped and changed a bit in your tech career so far. Why is that?
+            </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography className={classes.answer}>
-              This is merely the result of opportunities that presented themselves along the way. I was always drawn to the way things worked technically, and I used my previous roles to support myself while I gained startup experience and knowledge as a programmer.
+              This is merely the result of opportunities that presented themselves along the way. I was always drawn to
+              the way things worked technically, and I used my previous roles to support myself while I gained startup
+              experience and knowledge as a programmer.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -70,13 +74,16 @@ class Faqs extends React.Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography className={classes.answer}>
-              I would like to be a CTO and I believe that spending a number of years working directly in the code is ultimately the best path to achieve this.
+              I would like to be a CTO and I believe that spending a number of years working directly in the code is
+              ultimately the best path to achieve this.
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel expanded={expanded === 'panel3'} onChange={this.handleChange('panel3')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon classes={{ root: classes.icon }} />}>
-            <Typography className={classes.question}>What are the top 10 replies by programmers when their code doesn't work?</Typography>
+            <Typography className={classes.question}>
+              What are the top 10 replies by programmers when their code doesn't work?
+            </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails classes={{ root: classes.displayBlock }}>
             <div className={classes.answer}>
@@ -92,7 +99,10 @@ class Faqs extends React.Component {
                 <li>It works on my machine.</li>
                 <li>Are you messing with me?</li>
               </ol>
-              <p>It's important to work hard, but also to have a laugh!<img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} /></p>
+              <p>
+                It's important to work hard, but also to have a laugh
+                <img src={smilingEmoji} alt='Smiling Emoji' width='20' className={classes.emoji} />
+              </p>
             </div>
           </ExpansionPanelDetails>
         </ExpansionPanel>
