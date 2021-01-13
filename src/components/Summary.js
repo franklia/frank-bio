@@ -38,14 +38,15 @@ function Background(props) {
           PHP at nights and on weekends, and built websites and simple web apps.
         </p>
         <p>
-          I then had the opportunity to lead a project to rebuild a software platform (WooBoard) as Head of Product. It
-          was an amazing experience. In that role I managed two developers and delved deeper and more strategically into
-          the tech, including an involvement in architectural decision making.
+          I then had an unexpected opportunity to lead a project to rebuild a software platform (WooBoard) as a Product
+          Manager. It was an amazing experience. In that role I managed two developers and delved deeper and more
+          strategically into the tech, including an involvement in architectural decision making.
         </p>
         <p>
-          Ultimately though, I've always been drawn to the code, and I finally reached my goal of becoming a full stack
-          software developer in my role at ELMO. After a Covid reset, where I've been working on my own startup side
-          project, I'm now looking for a full-time role in a dynamic startup.
+          Ultimately though, I've always been drawn to the code, and I reached my goal of becoming a full stack software
+          developer in my role at ELMO, where I was part of a team building a suite of internal tools for the business.
+          After a Covid reset, where I've been working on my own side project, I'm now looking for a full-time role in a
+          dynamic tech company.
         </p>
       </div>
       <Grid container spacing={40}>

@@ -43,6 +43,22 @@ function JobHistory(props) {
               Full Stack Developer
             </Typography>
             <Typography variant='h6' color='inherit' align='right' className={classes.jobDate}>
+              Jul 2020 - Jan 2021
+            </Typography>
+            <Typography variant='h6' color='inherit' className={classes.jobCompany}>
+              Personal Project - Building a Mobile App
+            </Typography>
+            <p className={classes.jobDescription}>
+              Recently I had a Covid reset and took time to build a mobile app, using React Native and MongoDB Realm.
+            </p>
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <Typography variant='h5' color='inherit' className={classes.jobPosition}>
+              Full Stack Developer
+            </Typography>
+            <Typography variant='h6' color='inherit' align='right' className={classes.jobDate}>
               Jul 2019 - Jun 2020
             </Typography>
             <Typography variant='h6' color='inherit' className={classes.jobCompany}>
@@ -74,7 +90,7 @@ function JobHistory(props) {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography variant='h5' color='inherit' className={classes.jobPosition}>
-              Head of Product
+              Product Manager
             </Typography>
             <Typography variant='h6' color='inherit' align='right' className={classes.jobDate}>
               Jun 2017 - Jun 2019
