@@ -33,20 +33,18 @@ function Background(props) {
       <SectionTitle text='Summary' />
       <div className={classes.initialSummary}>
         <p>
-          My journey has been unique, and I believe that's a strength. My tech career began in tech support, which
-          allowed me to support myself whilst building up my skill base. During that time I began learning HTML, CSS and
-          PHP at nights and on weekends, and built websites and simple web apps.
+          My 10 year tech journey has been unique where I've worked across three different areas - customer, product,
+          and engineering. This provides me with a rare cross-functional perspective into the art of creating Saas
+          software that’s proven to be a strength.
         </p>
         <p>
-          I then had an unexpected opportunity to lead a project to rebuild a software platform (WooBoard) as a Product
-          Manager. It was an amazing experience. In that role I managed two developers and delved deeper and more
-          strategically into the tech, including an involvement in architectural decision making.
+          In my current role, I am a Senior Engineer acting as Lead at a fintech called BOULEVARD Global, where I'm
+          responsible for coding new features, overseeing our mid level developers, and maintaining the operational
+          integrity of our codebase and tech infrastructure.
         </p>
         <p>
-          Ultimately though, I've always been drawn to the code, and I reached my goal of becoming a full stack software
-          developer in my role at ELMO, where I was part of a team building a suite of internal tools for the business.
-          After a Covid reset, where I've been working on my own side project, I'm now looking for a full-time role in a
-          dynamic tech company.
+          I’m seeking a role in a dynamic team, where I can continue my engineering journey alongside colleagues who are
+          collaborative, supportive, and highly motivated to deliver high quality tech outcomes.
         </p>
       </div>
       <Grid container spacing={40}>

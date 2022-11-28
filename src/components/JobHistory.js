@@ -40,6 +40,41 @@ function JobHistory(props) {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography variant='h5' color='inherit' className={classes.jobPosition}>
+              Senior Software Engineer (acting as Lead from June 2022)
+            </Typography>
+            <Typography variant='h6' color='inherit' align='right' className={classes.jobDate}>
+              May 2021 - Present
+            </Typography>
+            <Typography variant='h6' color='inherit' className={classes.jobCompany}>
+              BOULEVARD Global
+            </Typography>
+            <p className={classes.jobDescription}>
+              BOULEVARD is a fintech platform which integrates with ASIC and enables unlisted companies to efficiently
+              manage their shareholder register and investor relations. My role is across the full stack, consisting of
+              React, Node, Typescript, MongoDB, Gitlab and Google Cloud Platform.
+            </p>
+            <p className={classes.jobDescription}>Responsibilities:</p>
+            <ul>
+              <li>Maintaining CI pipelines and coordinating deployments</li>
+              <li>Code reviews, and managing/mentoring our mid level developers</li>
+              <li>Database design</li>
+              <li>Writing code, including unit and e2e tests</li>
+              <li>Infrastructure upgrades and management e.g. Kubernetes</li>
+            </ul>
+            <p className={classes.jobDescription}>Achievements:</p>
+            <ul>
+              <li>Covering the Lead role after we were unable to recruit a new Lead due to a competitve market</li>
+              <li>
+                Starting from virtually a nil base, creating thorough documentation of our codebase, infrastructure and
+                micro-services
+              </li>
+              <li>Overseeing the building of a new revenue generating feature</li>
+            </ul>
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <Typography variant='h5' color='inherit' className={classes.jobPosition}>
               Full Stack Developer
             </Typography>
             <Typography variant='h6' color='inherit' align='right' className={classes.jobDate}>
@@ -49,7 +84,8 @@ function JobHistory(props) {
               Personal Project - Building a Mobile App
             </Typography>
             <p className={classes.jobDescription}>
-              Recently I had a Covid reset and took time to build a mobile app, using React Native and MongoDB Realm.
+              During this time I had a Covid reset where I took time to learn React Native and build a mobile app. This
+              project is ongoing, and I work on it in my downtime.
             </p>
           </Paper>
         </Grid>
@@ -65,25 +101,19 @@ function JobHistory(props) {
               ELMO Cloud HR & Payroll
             </Typography>
             <p className={classes.jobDescription}>
-              ELMO provides a comprehensive suite of cloud HR, payroll and rostering / time & attendance software
-              solutions. I was part of a team tasked with building a suite of internal tools to automate employee tasks
-              and aggregate distributed information.
+              ELMO provides a suite of cloud HR, payroll and rostering/time & attendance software solutions. I was part
+              of a team tasked with building a suite of internal tools to automate employee tasks and aggregate
+              distributed information.
             </p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
               <li>Full stack development using Node, React, Typescript, SQL, Mongo, and microservices architecture</li>
-              <li>Ensuring code is developed in a modular way, and backed by unit tests</li>
-              <li>Assisting with Product Management and BA duties when required</li>
+              <li>Ensuring code was developed in a modular way, and backed by unit tests</li>
             </ul>
             <p className={classes.jobDescription}>Achievements:</p>
             <ul>
-              <li>
-                Playing my part in helping to build a suite of internal tools to improve efficiencies across all ELMO
-                departments
-              </li>
-
+              <li>Helping to build a suite of internal tools to improve efficiencies across all ELMO departments</li>
               <li>Coming 2nd in ELMO's annual Hackathon, building a prototype for publising release notes</li>
-              <li>Learning Typescript, and test writing skills</li>
             </ul>
           </Paper>
         </Grid>
@@ -99,12 +129,13 @@ function JobHistory(props) {
               WooBoard (a REFFIND company)
             </Typography>
             <p className={classes.jobDescription}>
-              WooBoard is an employee recognition platform designed to assist companies improve their internal culture.
-              WooBoard was wholly acquired by REFFIND (who I was working for at the time) in late 2015.
+              WooBoard (a subsidiary of REFFIND, which was the company I officially worked for) is a peer to peer
+              employee recognition platform designed to assist companies improve their internal culture. In this role I
+              was tasked with overseeing the rebuilding of the entire platform using new technologies.
             </p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
-              <li>Overseeing a rebuild of the entire platform using new technology</li>
+              <li>All product management duties associated with the rebuild</li>
               <li>A full rebrand, including redesigning all user interfaces</li>
               <li>Managing a small development team of two</li>
               <li>
@@ -116,14 +147,9 @@ function JobHistory(props) {
             <ul>
               <li>Delivering the new platform in a timely fashion</li>
               <li>
-                Coordinating the migration process to the new platform for all customers (including database migration)
+                Coordinating the migration process to the new platform for all customers (including a database
+                migration)
               </li>
-              {/* <li>
-                I also personally designed and built the new marketing website:{' '}
-                <a href='https://wooboard.com' target='_blank' rel='noopener noreferrer'>
-                  wooboard.com
-                </a>
-              </li> */}
             </ul>
           </Paper>
         </Grid>
@@ -139,26 +165,20 @@ function JobHistory(props) {
               REFFIND Ltd
             </Typography>
             <p className={classes.jobDescription}>
-              REFFIND is an ASX listed startup in the HR / Customer Loyalty space. Initially the company’s only offering
-              was an employee referral app, but then WooBoard was also acquired. As one of the first employees at
-              REFFIND my role was to establish and lead the area of Tech Support.
+              REFFIND was an ASX listed startup in the HR / Customer Loyalty space (now renamed to Wooboard
+              Technologies). Initially the company’s only offering was an employee referral app, but then WooBoard was
+              also acquired. As one of the first employees at REFFIND my role was to establish and lead the area of Tech
+              Support.
             </p>
             <p className={classes.jobDescription}>Responsibilities:</p>
             <ul>
               <li>Troubleshooting customer issues and following them through to resolution</li>
-              <li>Using MySQL to diagnose customer issues and run reports</li>
               <li>Ensuring new customer accounts were set up correctly</li>
               <li>Manual software QA testing</li>
-              <li>Supporting the WooBoard platform after REFFIND acquired it in late 2015</li>
             </ul>
             <p className={classes.jobDescription}>Achievements:</p>
             <ul>
               <li>Learning SQL to diagnose support issues and produce customer reports</li>
-              <li>
-                Developing an overall knowledge of our software platforms and service offerings (end to end) to such an
-                extent that I became the person that my colleagues turned to when there was a problem they couldn't
-                resolve
-              </li>
             </ul>
           </Paper>
         </Grid>
