@@ -54,11 +54,11 @@ function Background(props) {
               My Coding Journey
             </Typography>
             <p>
-              Like many others, I started with HTML, CSS and PHP, where I began building websites using WordPress themes
-              and also created my first simple web app.
+              When I began in tech, I embarked on a TAFE course at night to learn web development. Starting with HTML,
+              CSS and PHP, I began building websites using WordPress themes and also created my first simple web app.
             </p>
             <p>
-              From there I completed a 3 month Ruby on Rails night course at CoderFactory, where I built "Feedsta" (see
+              Later I completed a 3 month Ruby on Rails night course at CoderFactory, where I built "Feedsta" (see
               portfolio) which integrates with the Instagram API.
             </p>
             <p>
@@ -66,9 +66,10 @@ function Background(props) {
               them to diagnose customer issues, find bugs and run reports.
             </p>
             <p>
-              More recently in my role at ELMO, I've been working with React, Node, MongoDB and MySQL. I also have some
-              experience with AWS, having had exposure to it whilst working at WooBoard, and also hosting my own apps
-              using Elastic Beanstalk and S3.
+              More recently in my engineering roles, I've been working with React, Node, Typescript, MongoDB, and MySQL.
+              I have some experience with AWS and GCP, and whilst I've still got lots to learn on the infrastructure
+              side I really enjoy it. So although I've only been working commercially as an engineer for the past few
+              years, I've been actively doing my own projects for a decade now.
             </p>
           </Paper>
         </Grid>
